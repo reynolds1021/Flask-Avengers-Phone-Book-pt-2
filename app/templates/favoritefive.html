@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1> Here are {{ persons_name }} top five favorite basketball players.</h1>
+
+
+    <ul>
+
+        {% for key, item in items.items() %}
+            {% if item == 'Kobe Bryant' %}
+                <li> *{{ key }} - {{ item }} </li>
+            {% else %}   
+                <li> {{ key }} - {{ item }}</li> 
+            {% endif %}
+        {% endfor %}    
+    
+    </ul>
+
+{% endblock content %}   

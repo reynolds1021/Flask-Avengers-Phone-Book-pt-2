@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+{% block content %}
+   
+
+ <h1>Avengers Info</h1>
+
+ <ol> 
+    {% for user in users %}
+
+    <li>{{user.firstname}}
+        {{user.lastname}}
+        {{user.heroname}}
+        {{user.address}}
+        {{user.phonenumber}}
+        {{user.heroname}}
+        {{ user.email }}
+       </li> 
+
+    {% endfor %}
+ </ol>
+
+ {% endblock content %}

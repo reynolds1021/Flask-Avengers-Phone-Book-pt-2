@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block content %}
+   
+{% if current_user.is_authenticated %}
+<h1>Hello,{{ current_user.heroname }}</h1>
+{% else %}
+<h1>Hello, please register for this rad site!</h1>
+{% endif %}
+
+{% endblock content %}
+    
